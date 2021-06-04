@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum sunt
+        tenetur incidunt dolorem in numquam eaque,">
+        <meta name="keywords" content="financial firm, finance athens, stocks, business, stock trading, investment athens">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-index.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <title>SwiftEarn | Our Blog</title>
+    </head>
+    <body>
+
+        <header id="hero" class="blog">
+            <div class="navbar top" id="navbar">
+                <h1 class="logo"><span id="logo-span" class="text-primary"><i class="fas fa-chart-pie"></i>Swift</span>Earn</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#cases">Cases</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <h1 class="blog-header-h1">Blog</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="flex-column">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1 bg-secondary">
+                            <h2>Blog Post One</h2>
+                            <p class="meta"><i class="fas fa-user"></i> posted by <strong>Eric Chapman</strong> | March 9 2021</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto hic,
+                                quae saepe delectus tempore veritatis! Similique repellendus assumenda nesciunt,
+                                quisquam labore quidem commodi amet deserunt blanditiis officia, dolor quo!</p>
+                            <a href="post.html" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2">
+                            <img src="img/blog1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog-2" class="blog flex-column">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1 bg-primary">
+                            <h2>Blog Post Two</h2>
+                            <p class="meta"><i class="fas fa-user"></i> posted by <strong>Maria Diaz</strong> | April 24 2021</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto hic,
+                                quae saepe delectus tempore veritatis! Similique repellendus assumenda nesciunt,
+                                quisquam labore quidem commodi amet deserunt blanditiis officia, dolor quo!</p>
+                            <a href="post.html" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2">
+                            <img src="img/blog2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex-column">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1 bg-secondary">
+                            <h2>Blog Post Three</h2>
+                            <p class="meta"><i class="fas fa-user"></i> posted by <strong>Nicolas Lovatz</strong> | May 17 2021</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto hic,
+                                quae saepe delectus tempore veritatis! Similique repellendus assumenda nesciunt,
+                                quisquam labore quidem commodi amet deserunt blanditiis officia, dolor quo!</p>
+                            <a href="post.html" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2">
+                            <img src="img/blog3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="blog-footer" class="bg-primary">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <p>Copyright &copy; <span id="year"></span> - SwiftEarn</p>
+            <p id="design">Website designed by Alexander Liakouris</p>
+        </footer>
+
+        <script>
+            $('#year').text(new Date().getFullYear());
+        </script>
+
+        <script>
+            const navbar=document.getElementById("navbar");
+            let scrolled=false;
+
+            window.onscroll=function(){
+                if(window.pageYOffset>100){
+                    navbar.classList.remove("top");
+                    if(!scrolled){
+                        navbar.style.transform="translateY(-70px)";
+                    }
+                    setTimeout(function(){
+                    navbar.style.transform="translateY(0px)";
+                    scrolled=true;
+                }, 200);
+                } else{
+                    navbar.classList.add("top");
+                    scrolled=false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

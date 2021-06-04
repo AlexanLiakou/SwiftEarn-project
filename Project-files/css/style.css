@@ -1,0 +1,422 @@
+/* General styling */
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img{
+    width:100%
+}
+
+/* Utility classes */
+
+.text-primary{
+    color: #9D0707;
+}
+
+.bg-primary{
+    background-color: black;
+    color: #fff;
+}
+
+.bg-secondary{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: #9D0707;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: #9D0707;
+    color: #000;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.flex-container>div{
+    padding: 20px;
+}
+
+.flex-column .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-column .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-column .column .column-1,
+.flex-column .column .column-2{
+    height: 100%;
+}
+
+.flex-column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-column .column-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-column h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.flex-column h4{
+    margin-bottom: 10px;
+}
+
+.flex-column p{
+    margin: 20px 0;
+}
+
+.section-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.section-header h2{
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.section-padding{
+    padding:20px 20 px 40px;
+}
+
+.flex-grid .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.flex-grid .column{
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+/* Main header styling */
+
+#hero{
+    background: url(../img/showcase.jpg) no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+}
+
+#hero .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#hero .content h1{
+    font-size: 3.2rem;
+}
+
+#hero .content p{
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+#hero:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6) ;
+}
+
+#hero *{
+    z-index: 10;
+}
+
+#hero.blog{
+    background: url(../img/blog.jpg) no-repeat center center/cover;
+    height: 30vh;
+}
+
+.content .blog-header-h1{
+    padding-top: 40px;
+}
+/* Navbar styling */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.navbar.top{
+    background: transparent;
+    opacity: 1;
+}
+
+.fa-chart-pie{
+    padding-right: 3px;
+}
+
+#logo-span{
+    padding-right: 3px;
+}
+
+.navbar .logo{
+    font-weight: 400;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: #9D0707;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    background-color: #9D0707;
+    color: #000;
+}
+
+/* Header content styling */
+
+.content i{
+    padding-right: 3px;
+}
+
+/* About section styling */
+
+/* Products styling */
+
+.products-section{
+    padding: 30px;
+}
+
+.products-section h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.products-section i{
+    background-color: #9D0707;
+    color: #000;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+/* Cases styling */
+
+#cases .row{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#cases img:hover{
+    opacity: 0.7;
+}
+
+/* Blog styling */
+
+#blog{
+    margin-top: 100px;
+}
+
+#blog,#blog-2 .row{
+    flex-direction: row-reverse;
+}
+
+#blog-2{
+    margin-top: 0px;
+}
+
+/* Team styling */
+
+.team img{
+    border-radius: 50%;
+}
+
+.team .flex-container p{
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Contact styling */
+
+#contact{
+    margin-top: 100px;
+}
+
+#contact h2{
+    margin-bottom: 15px;
+}
+
+.contact-form{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.contact-from labe{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-div{
+    margin-bottom: 15px;
+}
+
+.contact-form input{
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    border: 2px solid #9D0707;
+    border-radius: 5px;
+}
+
+.contact-form .btn{
+    margin-top: 20px;
+}
+
+/* Blog post styling */
+
+.post{
+    padding: 50px 30px;
+}
+
+.post h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.post .meta{
+    margin-bottom: 30px;
+}
+
+.post img{
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+/* Footer styling */
+
+#main-footer{
+    margin-top: 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    color: #fff;
+}
+
+#blog-footer{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 180px;
+    color: #fff;
+}
+
+.social-media{
+    display: block !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+#main-footer,#blog-footer .fab{
+    margin-right: 30px;
+    color: #9D0707;
+}
+
+#design{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
