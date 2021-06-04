@@ -3,7 +3,7 @@ Simple webpage template for a financial company. Please check the readme file fo
 
 -----General Info-----
 	
-	This project is a simple multi-page template used to display an example of a tropical hotel's homepage.
+	This project is a simple webpage template used to display an example of a financial firm's homepage.
 	
 -----Technical Info-----
 	
